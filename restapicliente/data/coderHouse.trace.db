@@ -1,0 +1,8 @@
+2022-07-18 23:47:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "([*]65478912,'AZNAR','PEDRO','1965-05-24')"; se esperaba "(, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "([*]65478912,'AZNAR','PEDRO','1965-05-24')"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(65478912,'AZNAR','PEDRO','1965-05-24') [42001-214]
+2022-07-18 23:48:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Valor demasiado largo para la columna "CODIGO CHARACTER VARYING(6)": "'FD00001' (7)"
+Value too long for column "CODIGO CHARACTER VARYING(6)": "'FD00001' (7)"; SQL statement:
+INSERT INTO PRODUCTOS(DESCRIPCION,PRECIO,STOCK,CODIGO) VALUES ('GUITARRA FENDER USA',200000,3,'FD00001'), ('GUITARRA PARKER FLY DELUXE',500000,2,'PF00032'), ('GUITARRA PRS MULTIFOIL',600000,4,'PR00045'), ('BAJO FACTOR',800000,1,'BF00072') [22001-214]
